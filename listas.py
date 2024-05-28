@@ -9,7 +9,7 @@ lista_de_opciones = [
     "Opción 7", 
     "Opción 8", 
     "Opción 9", 
-    "Opción 10" 
+    "Salir" 
 ]
 
 def cargar_opciones():
