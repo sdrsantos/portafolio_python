@@ -13,14 +13,12 @@ lista_de_opciones = [
 ]
 
 def cargar_opciones():
-    print("-----------------------------------")
-    columna = 0
+    print("-"*30)
     for opcion in lista_de_opciones:
         indice = lista_de_opciones.index(opcion)+1
-        if columna < 1:
-            print(f"[{indice}] {opcion}    ", end=" ")
-            columna +=1
+        if indice %2 == 0:
+            print(f"[{indice}] {opcion}")
         else:
-            print(f"[{indice}] {opcion}   ")
-            columna = 0
-    print("\n-------------------------------------")
+            mensaje = f"[{indice}]{opcion}"
+            print(f"[{indice}] {opcion}"," "*(14-len(mensaje)),end=" ")
+    print("\n", "-"*29)
