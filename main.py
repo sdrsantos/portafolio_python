@@ -3,6 +3,7 @@ import os
 from listas import *
 from calculadora import *
 from conversor_longitudes import *
+from frecuencia import *
 
 # INICIO DEL PROGRAMA
 os.system("cls")
@@ -10,8 +11,8 @@ os.system("cls")
 # lista de opciones
 lista_de_opciones = [
     "Calculadora",
-    "Conversor Monedas",
-    "Opción 3",
+    "Conversor de Monedas",
+    "Gráfica de frecuencias",
     "Opción 4",
     "Opción 5",
     "Opción 6",
@@ -31,6 +32,14 @@ while True:
             programa_calculadora()
         elif respuesta == "2":
             conversion_monedas()
+        elif respuesta == "3":
+            lista = [
+                {"producto":"Tomate   ", "f":20},
+                {"producto":"Coliflor ", "f":30},
+                {"producto":"Espinaca ", "f":25},
+                {"producto":"Apio     ", "f":35},
+                ]
+            grafica_frecuencias(lista)
         elif respuesta == "10":
             break
     
